@@ -1,4 +1,6 @@
-order_id,customer,amount
-1,Alice,10.5
-2,Bob,20.0
-3,Alice,7.5
+order_id,customer,amount,date,category
+1,Alice,10.5,2024-01-01,food
+2,Bob,20.0,2024-01-01,electronics
+3,Alice,7.5,2024-01-02,food
+4,Charlie,15.0,2024-01-02,books
+5,Bob,5.0,2024-01-03,food
