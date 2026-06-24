@@ -3,9 +3,10 @@
 # local-sql-pipeline
 Learning data engineering basics: Git, Python, VS Code, and SQL on DuckDB with an end‑to‑end mini ETL pipeline.
 
-This repo is a small local data engineering project to practice Python, DuckDB, and SQL.  
-It loads CSV files from `data/raw` into DuckDB, runs analytical SQL (GROUP BY, ORDER BY), and prints results from Python.  
-The goal is to build up to joins, CTEs, and window functions as the project grows.
+
+## Overview
+
+This project shows how to load, clean, and analyze data from multiple tables using Python, DuckDB, and SQL, turning raw CSVs into reusable, queryable datasets.
 
 ## Project structure
 
