@@ -32,3 +32,17 @@ The goal is to build up to joins, CTEs, and window functions as the project grow
    - Make sure `data/raw/sales.csv` exists
    - `python scripts/query_sales.py` → prints total amount per customer
 
+## Features
+
+- Local DuckDB database for fast analytical SQL
+- Sales mini-pipeline (CSV → DuckDB → SQL aggregations → Python)
+- Bikeshare mini-pipeline (raw trips CSV → cleaned table/CSV → station-level analysis)
+
+## Bikeshare pipeline
+
+1. Place a bikeshare CSV in `data/raw/` as `bikeshare_trips.csv`.
+2. Load the raw data into DuckDB:
+   - `python scripts/load_bikeshare.py`
+3. Create the cleaned table and export it:
+   - `python scripts/clean_bikeshare.py` → creates `bikeshare_clean` table and `data/processed/bikeshare_clean.csv`
+4. Run analysis queries to generate outputs in `output/`.
